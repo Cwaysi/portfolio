@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morison | Full Stack Developer</title>
+    <meta name="description" content="Professional portfolio showcasing web and desktop applications">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/favicon.ico">
+    
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- LightGallery -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="bg-fallback"></div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Justice Morison, Gurah</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="vh-100 d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6" data-aos="fade-right">
+                    <h1 class="display-4">Hi, I'm <span class="text-primary">Justice Morison Gurah</span></h1>
+                    <p class="lead mb-4">Full Stack Developer specializing in management systems</p>
+                    <div class="about-me" data-aos="fade-right" data-aos-delay="300">
+                        <p class="mb-2">
+                            <i class="fas fa-briefcase me-2"></i> CEO of Crystal Software Development Center
+                        </p>
+                        <p class="mb-2">
+                            <i class="fas fa-search me-2"></i> Assistant Inspector at National Schools Inspectorate Authority
+                        </p>
+                        <p class="mb-2">
+                            <i class="fas fa-code me-2"></i> Software Development Enthusiast focused on process automation
+                        </p>
+                        <p>
+                            <i class="fas fa-user-tie me-2"></i> Freelance Developer delivering tailored business solutions
+                        </p>
+                    </div>
+                    <div class="social-links mt-4">
+                        <a href="https://linkedin.com/in/yourprofile" class="btn btn-outline-light btn-lg m-2"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Cwaysi" class="btn btn-outline-light btn-lg m-2"><i class="fab fa-github"></i></a>
+                        <a href="https://youtube.com/Crystal_Software" class="btn btn-outline-light btn-lg m-2"><i class="fab fa-youtube"></i></a>
+                        <a href="https://tiktok.com/@crystal_software" class="btn btn-outline-light btn-lg m-2"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <div class="profile-img">
+                        <img src="assets/img/profile.jpg" alt="Your Name" class="img-fluid rounded-circle shadow">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">My Projects</h2>
+            
+            <!-- Project Types Tabs -->
+            <ul class="nav nav-pills justify-content-center mb-5" id="pills-tab">
+                <li class="nav-item">
+                    <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#web-projects">
+                        Web Systems <span class="badge bg-primary">8</span>
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#desktop-projects">
+                        Desktop Apps <span class="badge bg-primary">3</span>
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link" data-bs-toggle="pill" data-bs-target="#customized-projects">
+                        Custom Solutions <span class="badge bg-primary">2</span>
+                    </button>
+                </li>
+            </ul>
+            
+            <div class="tab-content">
+                <!-- Web Projects -->
+                <div class="tab-pane fade show active" id="web-projects">
+                    <div class="row g-4">
+                        <!-- School Management System -->
+                        <div class="col-md-6 col-lg-4" data-aos="zoom-in">
+                            <div class="card project-card h-100">
+                                <div id="schoolCarousel" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="assets/img/projects/school1.png" class="d-block w-100" alt="School System">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="assets/img/projects/school2.png" class="d-block w-100" alt="School System">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="assets/img/projects/school3.jpg" class="d-block w-100" alt="School System">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <h5 class="card-title">School Management System</h5>
+                                        <span class="badge bg-success">Web</span>
+                                    </div>
+                                    <ul class="features-list">
+                                        <li>Student enrollment management</li>
+                                        <li>Automated grading system</li>
+                                        <li>Attendance tracking</li>
+                                        <li>Multi-user access control</li>
+                                    </ul>
+                                    <div class="tech-stack mb-3">
+                                        <span class="badge bg-primary">React</span>
+                                        <span class="badge bg-primary">Node.js</span>
+                                        <span class="badge bg-primary">MongoDB</span>
+                                    </div>
+                                    <a href="https://github.com/Cwaysi/school-management" 
+                                       class="btn btn-sm btn-dark github-link" 
+                                       target="_blank">
+                                        <i class="fab fa-github"></i> View Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Church Management System -->
+                        <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="card project-card h-100">
+                                <div id="churchCarousel" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="assets/img/projects/church1.jpg" class="d-block w-100" alt="Church System">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="assets/img/projects/church2.jpg" class="d-block w-100" alt="Church System">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="assets/img/projects/church3.jpg" class="d-block w-100" alt="Church System">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <h5 class="card-title">Church Management System</h5>
+                                        <span class="badge bg-success">Web</span>
+                                    </div>
+                                    <ul class="features-list">
+                                        <li>Member database management</li>
+                                        <li>Event scheduling</li>
+                                        <li>Tithing and donation tracking</li>
+                                        <li>Reporting dashboard</li>
+                                    </ul>
+                                    <div class="tech-stack mb-3">
+                                        <span class="badge bg-primary">Vue.js</span>
+                                        <span class="badge bg-primary">Laravel</span>
+                                        <span class="badge bg-primary">MySQL</span>
+                                    </div>
+                                    <a href="https://github.com/Cwaysi/church-management" 
+                                       class="btn btn-sm btn-dark github-link" 
+                                       target="_blank">
+                                        <i class="fab fa-github"></i> View Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- POS/Inventory System -->
+                        <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="card project-card h-100">
+                                <div id="posCarousel" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="assets/img/projects/pos1.jpg" class="d-block w-100" alt="POS System">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="assets/img/projects/pos2.jpg" class="d-block w-100" alt="POS System">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="assets/img/projects/pos3.jpg" class="d-block w-100" alt="POS System">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <h5 class="card-title">POS Inventory System</h5>
+                                        <span class="badge bg-success">Web</span>
+                                    </div>
+                                    <ul class="features-list">
+                                        <li>Barcode scanning integration</li>
+                                        <li>Real-time inventory tracking</li>
+                                        <li>Sales analytics dashboard</li>
+                                        <li>Multi-store support</li>
+                                    </ul>
+                                    <div class="tech-stack mb-3">
+                                        <span class="badge bg-primary">Angular</span>
+                                        <span class="badge bg-primary">Firebase</span>
+                                        <span class="badge bg-primary">Node.js</span>
+                                    </div>
+                                    <a href="https://github.com/Cwaysi/pos-inventory" 
+                                       class="btn btn-sm btn-dark github-link" 
+                                       target="_blank">
+                                        <i class="fab fa-github"></i> View Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Ear Clinic System -->
+                        <div class="col-md-6 col-lg-4" data-aos="zoom-in">
+                            <div class="card project-card h-100">
+                                <div id="clinicCarousel" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="assets/img/projects/clinic1.jpg" class="d-block w-100" alt="Clinic System">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="assets/img/projects/clinic2.jpg" class="d-block w-100" alt="Clinic System">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="assets/img/projects/clinic3.jpg" class="d-block w-100" alt="Clinic System">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <h5 class="card-title">Ear Clinic System</h5>
+                                        <span class="badge bg-warning text-dark">Custom Web</span>
+                                    </div>
+                                    <ul class="features-list">
+                                        <li>Patient record management</li>
+                                        <li>Appointment scheduling</li>
+                                        <li>Medical history tracking</li>
+                                        <li>Custom reporting</li>
+                                    </ul>
+                                    <div class="tech-stack mb-3">
+                                        <span class="badge bg-primary">React</span>
+                                        <span class="badge bg-primary">Django</span>
+                                        <span class="badge bg-primary">PostgreSQL</span>
+                                    </div>
+                                    <a href="https://github.com/PerryMoris/ear-clinic" 
+                                       class="btn btn-sm btn-dark github-link" 
+                                       target="_blank">
+                                        <i class="fab fa-github"></i> View Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Rehab System -->
+                        <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="card project-card h-100">
+                                <div id="rehabCarousel" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="assets/img/projects/rehab1.jpg" class="d-block w-100" alt="Rehab System">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="assets/img/projects/rehab2.jpg" class="d-block w-100" alt="Rehab System">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="assets/img/projects/rehab3.jpg" class="d-block w-100" alt="Rehab System">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <h5 class="card-title">Rehabilitation System</h5>
+                                        <span class="badge bg-warning text-dark">Custom Web</span>
+                                    </div>
+                                    <ul class="features-list">
+                                        <li>Patient progress tracking</li>
+                                        <li>Therapy session management</li>
+                                        <li>Staff assignment system</li>
+                                        <li>Custom reporting tools</li>
+                                    </ul>
+                                    <div class="tech-stack mb-3">
+                                        <span class="badge bg-primary">Vue.js</span>
+                                        <span class="badge bg-primary">Laravel</span>
+                                        <span class="badge bg-primary">MySQL</span>
+                                    </div>
+                                    <a href="https://github.com/PerryMoris/rehab-system" 
+                                       class="btn btn-sm btn-dark github-link" 
+                                       target="_blank">
+                                        <i class="fab fa-github"></i> View Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Hotel Management -->
+                        <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="card project-card h-100">
+                                <div id="hotelCarousel" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="assets/img/projects/hotel1.jpg" class="d-block w-100" alt="Hotel System">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="assets/img/projects/hotel2.jpg" class="d-block w-100" alt="Hotel System">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="assets/img/projects/hotel3.jpg" class="d-block w-100" alt="Hotel System">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <h5 class="card-title">Hotel Management System</h5>
+                                        <span class="badge bg-success">Web</span>
+                                    </div>
+                                    <ul class="features-list">
+                                        <li>Room booking management</li>
+                                        <li>Housekeeping scheduling</li>
+                                        <li>Billing and invoicing</li>
+                                        <li>Customer feedback system</li>
+                                    </ul>
+                                    <div class="tech-stack mb-3">
+                                        <span class="badge bg-primary">React</span>
+                                        <span class="badge bg-primary">Node.js</span>
+                                        <span class="badge bg-primary">MongoDB</span>
+                                    </div>
+                                    <a href="https://github.com/Cwaysi/hotel-management" 
+                                       class="btn btn-sm btn-dark github-link" 
+                                       target="_blank">
+                                        <i class="fab fa-github"></i> View Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Staff Management -->
+                        <div class="col-md-6 col-lg-4" data-aos="zoom-in">
+                            <div class="card project-card h-100">
+                                <div id="staffCarousel" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="assets/img/projects/staff1.jpg" class="d-block w-100" alt="Staff System">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="assets/img/projects/staff2.jpg" class="d-block w-100" alt="Staff System">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="assets/img/projects/staff3.jpg" class="d-block w-100" alt="Staff System">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <h5 class="card-title">Staff Management System</h5>
+                                        <span class="badge bg-success">Web</span>
+                                    </div>
+                                    <ul class="features-list">
+                                        <li>Employee database</li>
+                                        <li>Shift scheduling</li>
+                                        <li>Performance tracking</li>
+                                        <li>Payroll integration</li>
+                                    </ul>
+                                    <div class="tech-stack mb-3">
+                                        <span class="badge bg-primary">Angular</span>
+                                        <span class="badge bg-primary">.NET Core</span>
+                                        <span class="badge bg-primary">SQL Server</span>
+                                    </div>
+                                    <a href="https://github.com/Cwaysi/staff-management" 
+                                       class="btn btn-sm btn-dark github-link" 
+                                       target="_blank">
+                                        <i class="fab fa-github"></i> View Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Desktop Projects -->
+                <div class="tab-pane fade" id="desktop-projects">
+                    <div class="row g-4">
+                        <!-- Hospital Management -->
+                        <div class="col-md-6 col-lg-4" data-aos="zoom-in">
+                            <div class="card project-card h-100">
+                                <div id="hospitalCarousel" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="assets/img/projects/hospital1.jpg" class="d-block w-100" alt="Hospital System">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="assets/img/projects/hospital2.jpg" class="d-block w-100" alt="Hospital System">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="assets/img/projects/hospital3.jpg" class="d-block w-100" alt="Hospital System">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <h5 class="card-title">Hospital Management</h5>
+                                        <span class="badge bg-info">Desktop</span>
+                                    </div>
+                                    <ul class="features-list">
+                                        <li>Patient registration</li>
+                                        <li>Doctor appointment system</li>
+                                        <li>Pharmacy inventory</li>
+                                        <li>Billing system</li>
+                                    </ul>
+                                    <div class="tech-stack mb-3">
+                                        <span class="badge bg-primary">C#</span>
+                                        <span class="badge bg-primary">WPF</span>
+                                        <span class="badge bg-primary">SQLite</span>
+                                    </div>
+                                    <a href="https://github.com/Cwaysi/hospital-management" 
+                                       class="btn btn-sm btn-dark github-link" 
+                                       target="_blank">
+                                        <i class="fab fa-github"></i> View Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Savings & Loan -->
+                        <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="card project-card h-100">
+                                <div id="savingsCarousel" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="assets/img/projects/savings1.jpg" class="d-block w-100" alt="Savings System">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="assets/img/projects/savings2.jpg" class="d-block w-100" alt="Savings System">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="assets/img/projects/savings3.jpg" class="d-block w-100" alt="Savings System">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <h5 class="card-title">Savings & Loan System</h5>
+                                        <span class="badge bg-info">Desktop</span>
+                                    </div>
+                                    <ul class="features-list">
+                                        <li>Member account management</li>
+                                        <li>Loan application processing</li>
+                                        <li>Interest calculation</li>
+                                        <li>Financial reporting</li>
+                                    </ul>
+                                    <div class="tech-stack mb-3">
+                                        <span class="badge bg-primary">Java</span>
+                                        <span class="badge bg-primary">JavaFX</span>
+                                        <span class="badge bg-primary">MySQL</span>
+                                    </div>
+                                    <a href="https://github.com/Cwaysi/savings-loan" 
+                                       class="btn btn-sm btn-dark github-link" 
+                                       target="_blank">
+                                        <i class="fab fa-github"></i> View Code
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Technical Skills</h2>
+            <div class="row">
+                <div class="col-md-6" data-aos="fade-right">
+                    <h4 class="mb-4">Web Development</h4>
+                    <div class="skill-item mb-3">
+                        <div class="d-flex justify-content-between">
+                            <span>HTML/CSS/JavaScript</span>
+                            <span>95%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-3">
+                        <div class="d-flex justify-content-between">
+                            <span>React/Vue/Angular</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-3">
+                        <div class="d-flex justify-content-between">
+                            <span>Node.js/Laravel/Django</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-primary" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-left">
+                    <h4 class="mb-4">Desktop Development</h4>
+                    <div class="skill-item mb-3">
+                        <div class="d-flex justify-content-between">
+                            <span>C#/.NET</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-3">
+                        <div class="d-flex justify-content-between">
+                            <span>Java</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item mb-3">
+                        <div class="d-flex justify-content-between">
+                            <span>Python</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar bg-info" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12">
+                    <h4 class="mb-4">Database & Other Skills</h4>
+                    <div class="d-flex flex-wrap">
+                        <span class="skill-badge m-1">MySQL</span>
+                        <span class="skill-badge m-1">MongoDB</span>
+                        <span class="skill-badge m-1">PostgreSQL</span>
+                        <span class="skill-badge m-1">Firebase</span>
+                        <span class="skill-badge m-1">Git</span>
+                        <span class="skill-badge m-1">Docker</span>
+                        <span class="skill-badge m-1">AWS</span>
+                        <span class="skill-badge m-1">UI/UX Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Get In Touch</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8" data-aos="fade-up">
+                    <form id="contactForm">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <input type="text" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Subject">
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Your Name</h5>
+                    <p>Full Stack Developer specializing in business management systems and custom solutions.</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home" class="text-light">Home</a></li>
+                        <li><a href="#projects" class="text-light">Projects</a></li>
+                        <li><a href="#skills" class="text-light">Skills</a></li>
+                        <li><a href="#contact" class="text-light">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Connect</h5>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/yourprofile" class="btn btn-outline-light btn-sm m-1"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Cwaysi" class="btn btn-outline-light btn-sm m-1"><i class="fab fa-github"></i></a>
+                        <a href="https://youtube.com/yourchannel" class="btn btn-outline-light btn-sm m-1"><i class="fab fa-youtube"></i></a>
+                        <a href="https://tiktok.com/@yourusername" class="btn btn-outline-light btn-sm m-1"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                    <div class="mt-3">
+                        <p><i class="fas fa-envelope me-2"></i> your.email@example.com</p>
+                        <p><i class="fas fa-phone me-2"></i> +123 456 7890</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 bg-secondary">
+            <div class="text-center">
+                <p>&copy; 2023 Your Name. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

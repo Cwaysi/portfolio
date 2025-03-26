@@ -1,0 +1,320 @@
+:root {
+    --primary: #6c63ff;  /* Changed to purple for better dark theme contrast */
+    --dark: #121212;     /* Darker background */
+    --darker: #0a0a0a;   /* Even darker elements */
+    --light: #e0e0e0;    /* Light text */
+    --lighter: #f5f5f5;  /* Very light accents */
+    --info: #17a2b8;
+    --success: #28a745;
+    --warning: #ffc107;
+    --text: #e0e0e0;     /* Main text color */
+    --text-secondary: #b0b0b0; /* Secondary text */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 70px;
+    color: var(--text);
+    line-height: 1.6;
+    background-color: var(--dark);
+}
+
+/* Navigation */
+.navbar {
+    transition: all 0.3s;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    background-color: var(--darker) !important;
+}
+
+.navbar-brand, .nav-link {
+    color: var(--light) !important;
+}
+
+.nav-link:hover {
+    color: var(--primary) !important;
+}
+
+.navbar-scrolled {
+    background-color: rgba(10, 10, 10, 0.98) !important;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Hero Section */
+#home {
+    background: 
+        linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), 
+        url('assets/img/bg-dark.jpg') center/cover no-repeat fixed;
+    color: var(--light);
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.profile-img {
+    position: relative;
+    max-width: 400px;
+    margin: 0 auto;
+    border: 5px solid rgba(108, 99, 255, 0.2);
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.5),
+                0 0 0 8px rgba(108, 99, 255, 0.1);
+}
+
+.profile-img::after {
+    content: '';
+    position: absolute;
+    inset: -15px;
+    border: 3px solid var(--primary);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+    pointer-events: none;
+}
+
+@keyframes pulse {
+    0% { transform: scale(0.95); opacity: 0.7; }
+    70% { transform: scale(1.05); opacity: 0.4; }
+    100% { transform: scale(0.95); opacity: 0.7; }
+}
+
+/* Projects */
+#projects {
+    background-color: var(--darker);
+}
+
+.project-card {
+    transition: all 0.3s;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    overflow: hidden;
+    background-color: #1e1e1e;
+    color: var(--text);
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(108, 99, 255, 0.2);
+}
+
+.project-card .carousel {
+    border-radius: 0.375rem 0.375rem 0 0;
+    overflow: hidden;
+    background-color: #2d2d2d;
+}
+
+.project-card .carousel-item {
+    height: 200px;
+    background-color: #2d2d2d;
+}
+
+.project-card .carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.card-body {
+    background-color: #1e1e1e;
+}
+
+.card-title {
+    color: var(--lighter);
+}
+
+.features-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 1rem;
+    color: var(--text-secondary);
+}
+
+.features-list li {
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.features-list li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+}
+
+.tech-stack .badge {
+    margin-right: 0.3rem;
+    margin-bottom: 0.3rem;
+    font-weight: normal;
+    transition: all 0.3s;
+    background-color: #333;
+    color: var(--light);
+}
+
+.tech-stack .badge:hover {
+    transform: translateY(-3px);
+    background-color: var(--primary);
+}
+
+.github-link {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s !important;
+    background-color: #333 !important;
+    border-color: #444 !important;
+    color: var(--light) !important;
+}
+
+.github-link::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(108, 99, 255, 0.1);
+    transform: rotate(45deg);
+    transition: all 0.5s;
+}
+
+.github-link:hover {
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+}
+
+.github-link:hover::after {
+    left: 50%;
+    top: 50%;
+}
+
+/* Skills */
+#skills {
+    background-color: var(--dark);
+    color: var(--text);
+}
+
+.skill-item .progress {
+    height: 8px;
+    border-radius: 4px;
+    background-color: #333;
+}
+
+.skill-item .progress-bar {
+    border-radius: 4px;
+}
+
+.skill-badge {
+    display: inline-block;
+    padding: 0.35em 0.65em;
+    font-size: 0.75em;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--light);
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+    background-color: #333;
+    transition: all 0.3s;
+}
+
+.skill-badge:hover {
+    background-color: var(--primary);
+    transform: translateY(-2px);
+}
+
+/* Contact Form */
+#contact {
+    background-color: var(--darker);
+}
+
+#contactForm .form-control {
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #444;
+    transition: all 0.3s;
+    background-color: #2d2d2d;
+    color: var(--text);
+}
+
+#contactForm .form-control:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 0.25rem rgba(108, 99, 255, 0.25);
+    background-color: #333;
+    color: var(--light);
+}
+
+#contactForm .form-control::placeholder {
+    color: #666;
+}
+
+/* Footer */
+footer {
+    background-color: var(--darker);
+    color: var(--text-secondary);
+}
+
+footer a {
+    text-decoration: none;
+    transition: all 0.3s;
+    color: var(--text-secondary);
+}
+
+footer a:hover {
+    color: var(--primary) !important;
+}
+
+footer h5 {
+    color: var(--light);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    #home {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        height: auto;
+        text-align: center;
+    }
+    
+    .profile-img {
+        max-width: 250px;
+        margin-top: 30px;
+    }
+    
+    .project-card {
+        margin-bottom: 30px;
+    }
+}
+
+/* Animation Classes */
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Fix for background image */
+.bg-image-fix {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url('../img/bg.jpg') center/cover no-repeat fixed;
+}
+.bg-fallback {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* background: url('https://t4.ftcdn.net/jpg/04/19/26/97/360_F_419269782_9LsP3TQndMVnZ2j3ZhTPhMjaqQpFAth9.jpg') center/cover no-repeat fixed; */
+    background: url('../img/bg.jpg') center/cover no-repeat fixed;
+}
